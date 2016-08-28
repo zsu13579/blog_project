@@ -1,0 +1,1857 @@
+2016-06-04 06:34:02,523 [Thread-2:7996] [django.request:170] [base:get_response] [WARNING]- Not Found: /todolist/
+2016-06-04 06:34:02,826 [Thread-3:5072] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-06 08:06:25,332 [Thread-8:7592] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-07 07:57:30,898 [Thread-2:6600] [django.request:170] [base:get_response] [WARNING]- Not Found: /todolist/
+2016-06-07 07:57:31,174 [Thread-3:6604] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-07 07:57:33,217 [Thread-4:6660] [django.request:170] [base:get_response] [WARNING]- Not Found: /ajax_homework/
+2016-06-07 10:18:08,476 [Thread-3:7284] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-07 10:35:31,665 [Thread-39:4768] [django.request:170] [base:get_response] [WARNING]- Not Found: /todolist/
+2016-06-07 10:36:04,621 [Thread-46:6944] [django.request:170] [base:get_response] [WARNING]- Not Found: /news.html
+2016-06-08 07:29:36,571 [Thread-2:7636] [django.request:170] [base:get_response] [WARNING]- Not Found: /todolist/
+2016-06-08 07:29:36,733 [Thread-3:7648] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-12 08:52:37,700 [Thread-2:6388] [django.request:170] [base:get_response] [WARNING]- Not Found: /index
+2016-06-12 08:52:38,049 [Thread-3:6408] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-12 14:16:08,157 [Thread-2:1804] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 25, in index
+    return render(request, 'index.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 345, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 60, in extend_nodelist
+    super(DebugParser, self).extend_nodelist(nodelist, node, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 371, in extend_nodelist
+    "in the template." % node)
+TemplateSyntaxError: <ExtendsNode: extends 'base.html'> must be the first tag in the template.
+2016-06-12 14:16:08,756 [Thread-3:6028] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-12 14:22:29,427 [Thread-2:3620] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 25, in index
+    return render(request, 'index.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'static'
+2016-06-13 14:17:27,907 [Thread-3:3088] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-13 14:48:06,641 [Thread-2:5936] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/2/
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 1519, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (date_publish) specified for Article. Check fields/fieldsets/exclude attributes of class ArticleAdmin.
+2016-06-13 14:49:42,796 [Thread-3:2924] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/2/
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 1519, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (date_publish) specified for Article. Check fields/fieldsets/exclude attributes of class ArticleAdmin.
+2016-06-13 14:49:56,071 [Thread-8:3368] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/2/
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 1519, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (date_publish) specified for Article. Check fields/fieldsets/exclude attributes of class ArticleAdmin.
+2016-06-13 14:50:25,651 [Thread-2:980] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/2/
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 1519, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (date_publish) specified for Article. Check fields/fieldsets/exclude attributes of class ArticleAdmin.
+2016-06-13 14:50:27,318 [Thread-3:1388] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/2/
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 1519, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (date_publish) specified for Article. Check fields/fieldsets/exclude attributes of class ArticleAdmin.
+2016-06-14 07:09:40,072 [Thread-4:2580] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-14 07:31:31,697 [Thread-2:2408] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "C:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\djangoWeb\blog_project\blog_project\urls.py", line 29, in <module>
+    url(r'^/archive', archive,name='archive'),
+NameError: name 'archive' is not defined
+2016-06-14 07:32:26,335 [Thread-18:4356] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: //archive
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 151, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view blog.views.archive didn't return an HttpResponse object. It returned None instead.
+2016-06-14 07:38:42,380 [Thread-8:2972] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: //archive
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 51, in archive
+    article_list = Article.objects.filter(date_publish__year=year,date_publish__month=month)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1304, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1332, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1203, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1096, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\lookups.py", line 96, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\lookups.py", line 134, in get_prep_lookup
+    return self.lhs.output_field.get_prep_lookup(self.lookup_name, self.rhs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\fields\__init__.py", line 1312, in get_prep_lookup
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+2016-06-14 07:39:17,036 [Thread-15:1972] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: //archive
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 51, in archive
+    article_list = Article.objects.filter(date_publish__year=int(year),date_publish__month=int(month))
+ValueError: invalid literal for int() with base 10: ''
+2016-06-14 07:41:19,539 [Thread-15:2008] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: //archive
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 51, in archive
+    article_list = Article.objects.filter(date_publish__year=int(year),date_publish__month=int(month))
+ValueError: invalid literal for int() with base 10: ''
+2016-06-14 07:42:02,698 [Thread-15:1112] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /archive
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 51, in archive
+    article_list = Article.objects.filter(date_publish__year=int(year),date_publish__month=int(month))
+ValueError: invalid literal for int() with base 10: ''
+2016-06-14 09:54:21,151 [Thread-2:7608] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "C:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\djangoWeb\blog_project\blog_project\urls.py", line 19, in <module>
+    from blog.views import *
+  File "E:\djangoWeb\blog_project\blog\views.py", line 1
+SyntaxError: Non-ASCII character '\xef' in file E:\djangoWeb\blog_project\blog\views.py on line 1, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+2016-06-14 09:55:31,650 [Thread-2:6540] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "C:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\djangoWeb\blog_project\blog_project\urls.py", line 19, in <module>
+    from blog.views import *
+  File "E:\djangoWeb\blog_project\blog\views.py", line 1
+SyntaxError: Non-ASCII character '\xef' in file E:\djangoWeb\blog_project\blog\views.py on line 1, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+2016-06-14 09:55:33,723 [Thread-3:1560] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "C:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "E:\djangoWeb\blog_project\blog_project\urls.py", line 19, in <module>
+    from blog.views import *
+  File "E:\djangoWeb\blog_project\blog\views.py", line 1
+SyntaxError: Non-ASCII character '\xef' in file E:\djangoWeb\blog_project\blog\views.py on line 1, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+2016-06-14 09:56:17,861 [Thread-2:8072] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 38, in index
+    return render(request, 'index.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 113, in render
+    compiled_parent = self.get_parent(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 110, in get_parent
+    return context.template.engine.get_template(parent)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 633, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 429, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+TemplateSyntaxError: Invalid filter: 'silce'
+2016-06-14 10:05:13,539 [Thread-2:3132] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /archive
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 54, in archive
+    return render(request, 'archive.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "C:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "E:\djangoWeb\blog_project\blog\views.py", line 30, in global_settings
+    article_comment_list = Comment.objects.annotate('article').order_by(Count)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 780, in annotate
+    raise TypeError("Complex annotations require an alias")
+TypeError: Complex annotations require an alias
+2016-06-14 13:57:33,459 [Thread-2:4280] [django.request:170] [base:get_response] [WARNING]- Not Found: /blog/index/
+2016-06-14 14:04:59,174 [Thread-3:3904] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-14 14:11:11,499 [Thread-14:5800] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-14 14:30:12,941 [Thread-3:4772] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-14 15:03:21,773 [Thread-2:6844] [django.request:170] [base:get_response] [WARNING]- Not Found: /base.html
+2016-06-14 15:03:24,776 [Thread-3:7876] [django.request:170] [base:get_response] [WARNING]- Not Found: /base.html
+2016-06-14 15:03:34,092 [Thread-16:7616] [django.request:170] [base:get_response] [WARNING]- Not Found: /base.html
+2016-06-15 06:36:39,865 [Thread-4:1448] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-15 06:36:42,576 [Thread-6:3940] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/default.jpg
+2016-06-15 06:54:37,391 [Thread-3:7040] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 94, in article
+    return render(request, 'article.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 633, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 429, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+TemplateSyntaxError: Invalid filter: 'month_to_upper'
+2016-06-15 06:55:23,157 [Thread-14:7864] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 94, in article
+    return render(request, 'article.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 633, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 429, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+TemplateSyntaxError: Invalid filter: 'month_to_upper'
+2016-06-15 06:56:53,187 [Thread-14:5832] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 94, in article
+    return render(request, 'article.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 633, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 429, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+TemplateSyntaxError: Invalid filter: 'month_to_upper'
+2016-06-15 06:58:32,803 [Thread-14:4920] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 94, in article
+    return render(request, 'article.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 633, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 429, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+TemplateSyntaxError: Invalid filter: 'month_to_upper'
+2016-06-15 06:59:58,736 [Thread-14:7172] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 94, in article
+    return render(request, 'article.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\defaulttags.py", line 1163, in load
+    (taglib, e))
+TemplateSyntaxError: 'myfilter' is not a valid tag library: ImportError raised loading blog.templatetags.myfilter: cannot import name Template
+2016-06-15 07:02:54,805 [Thread-15:7080] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/default.jpg
+2016-06-15 14:21:13,019 [Thread-3:692] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-15 14:21:14,683 [Thread-5:2864] [django.request:170] [base:get_response] [WARNING]- Not Found: /images/default.jpg
+2016-06-16 07:32:15,397 [Thread-3:1960] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-16 07:32:17,374 [Thread-4:5512] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 94, in article
+    return render(request, 'article.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\defaulttags.py", line 329, in render
+    return nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 579, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 496, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'logout' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2016-06-16 07:34:20,454 [Thread-2:5396] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 94, in article
+    return render(request, 'article.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 579, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 496, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'comment_post' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2016-06-16 08:06:49,019 [Thread-14:3916] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 100, in article
+    'article': articleid} if request.user.is_authenticated() else{'article': articleid})
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\functional.py", line 227, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'url'
+2016-06-16 08:34:41,688 [Thread-2:6348] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 100, in article
+    'article': articleid} if request.user.is_authenticated() else{'article': articleid})
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\functional.py", line 226, in inner
+    self._setup()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\utils\functional.py", line 359, in _setup
+    self._wrapped = self._setupfunc()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\auth\middleware.py", line 22, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\auth\middleware.py", line 10, in get_user
+    request._cached_user = auth.get_user(request)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\auth\__init__.py", line 174, in get_user
+    user = backend.get_user(user_id)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\contrib\auth\backends.py", line 93, in get_user
+    return UserModel._default_manager.get(pk=user_id)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 328, in get
+    num = len(clone)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\users\lenovo\appdata\local\temp\easy_install-vdwudh\MySQL_python-1.2.5-py2.7-win32.egg.tmp\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\users\lenovo\appdata\local\temp\easy_install-vdwudh\MySQL_python-1.2.5-py2.7-win32.egg.tmp\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'blog_user.url' in 'field list'")
+2016-06-16 08:51:14,690 [Thread-2:7432] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 113, in article
+    return render(request, 'article.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 317, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 633, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 429, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+TemplateSyntaxError: Invalid filter: 'count'
+2016-06-16 08:53:48,900 [Thread-2:7028] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 113, in article
+    print comment_list.count()
+TypeError: count() takes exactly one argument (0 given)
+2016-06-16 08:54:08,157 [Thread-2:5584] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 113, in article
+    print comment_list.all.count
+AttributeError: 'list' object has no attribute 'all'
+2016-06-16 08:54:23,144 [Thread-2:2844] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 113, in article
+    print comment_list.Count
+AttributeError: 'list' object has no attribute 'Count'
+2016-06-16 08:58:00,142 [Thread-2:7708] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 114, in article
+    print [1,2,3].len
+AttributeError: 'list' object has no attribute 'len'
+2016-06-16 09:44:02,983 [Thread-2:8768] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 53, in index
+    return render(request, 'index.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\defaulttags.py", line 217, in render
+    nodelist.append(node.render(context))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 579, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\urlresolvers.py", line 496, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'article.html' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2016-06-16 09:47:34,487 [Thread-15:9064] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 92, in article
+    article = Article.objects.get(id=articleid)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1304, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1332, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1203, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1096, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\lookups.py", line 96, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\lookups.py", line 134, in get_prep_lookup
+    return self.lhs.output_field.get_prep_lookup(self.lookup_name, self.rhs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\fields\__init__.py", line 727, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\fields\__init__.py", line 985, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+2016-06-16 09:47:53,075 [Thread-17:9700] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 92, in article
+    article = Article.objects.get(id=articleid)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1304, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1332, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1203, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1096, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\lookups.py", line 96, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\lookups.py", line 134, in get_prep_lookup
+    return self.lhs.output_field.get_prep_lookup(self.lookup_name, self.rhs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\fields\__init__.py", line 727, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\fields\__init__.py", line 985, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+2016-06-16 09:48:00,572 [Thread-18:6888] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 92, in article
+    article = Article.objects.get(id=articleid)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1304, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1332, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1203, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1096, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\lookups.py", line 96, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\lookups.py", line 134, in get_prep_lookup
+    return self.lhs.output_field.get_prep_lookup(self.lookup_name, self.rhs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\fields\__init__.py", line 727, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\fields\__init__.py", line 985, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+2016-06-16 09:48:58,017 [Thread-31:10048] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 92, in article
+    article = Article.objects.get(id=articleid)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1304, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1332, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1203, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1096, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\lookups.py", line 96, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\lookups.py", line 134, in get_prep_lookup
+    return self.lhs.output_field.get_prep_lookup(self.lookup_name, self.rhs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\fields\__init__.py", line 727, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\fields\__init__.py", line 985, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+2016-06-16 09:51:53,615 [Thread-34:9552] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 92, in article
+    article = Article.objects.get(id=articleid)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1304, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1332, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1203, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1096, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\lookups.py", line 96, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\lookups.py", line 134, in get_prep_lookup
+    return self.lhs.output_field.get_prep_lookup(self.lookup_name, self.rhs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\fields\__init__.py", line 727, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\fields\__init__.py", line 985, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+2016-06-16 09:52:35,572 [Thread-35:10164] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 92, in article
+    article = Article.objects.get(id=articleid)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1304, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1332, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1203, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\sql\query.py", line 1096, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\lookups.py", line 96, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\lookups.py", line 134, in get_prep_lookup
+    return self.lhs.output_field.get_prep_lookup(self.lookup_name, self.rhs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\fields\__init__.py", line 727, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\db\models\fields\__init__.py", line 985, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+2016-06-16 16:01:35,290 [Thread-2:10624] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 59, in index
+    return render(request, 'index.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'uploadskindeditor'
+2016-06-16 16:06:08,168 [Thread-2:11676] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 59, in index
+    return render(request, 'index.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'uploads'
+2016-06-16 16:08:20,526 [Thread-2:10356] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 59, in index
+    return render(request, 'index.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\defaulttags.py", line 1163, in load
+    (taglib, e))
+TemplateSyntaxError: 'mediafiles' is not a valid tag library: Template library mediafiles not found, tried django.templatetags.mediafiles,django.contrib.admin.templatetags.mediafiles,django.contrib.staticfiles.templatetags.mediafiles,blog.templatetags.mediafiles
+2016-06-17 07:10:27,349 [Thread-2:2948] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 59, in index
+    return render(request, 'index.html', locals())
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\template\defaulttags.py", line 1163, in load
+    (taglib, e))
+TemplateSyntaxError: 'mediafiles' is not a valid tag library: Template library mediafiles not found, tried django.templatetags.mediafiles,django.contrib.admin.templatetags.mediafiles,django.contrib.staticfiles.templatetags.mediafiles,blog.templatetags.mediafiles
+2016-06-17 07:10:28,059 [Thread-3:5168] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-17 07:20:00,548 [Thread-8:3076] [django.request:170] [base:get_response] [WARNING]- Not Found: /ad/2016/06/a1_pSSMqkd.jpg
+2016-06-17 07:26:04,109 [Thread-8:5660] [django.request:170] [base:get_response] [WARNING]- Not Found: /ad/2016/06/a1_pSSMqkd.jpg
+2016-06-18 07:00:45,411 [Thread-7:3476] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 07:24:08,688 [Thread-7:7932] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 07:40:45,082 [Thread-5:892] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 223, in get_response
+    response = middleware_method(request, response)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\middleware\clickjacking.py", line 31, in process_response
+    if response.get('X-Frame-Options', None) is not None:
+AttributeError: 'str' object has no attribute 'get'
+2016-06-19 07:42:22,119 [Thread-11:5052] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 223, in get_response
+    response = middleware_method(request, response)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\middleware\clickjacking.py", line 31, in process_response
+    if response.get('X-Frame-Options', None) is not None:
+AttributeError: 'str' object has no attribute 'get'
+2016-06-19 07:52:25,713 [Thread-5:7088] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% 'comment_post' %}
+2016-06-19 07:53:08,299 [Thread-5:4808] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% 'comment_post' %}
+2016-06-19 07:54:12,224 [Thread-5:4356] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% url 'comment_post' %}
+2016-06-19 08:12:32,529 [Thread-2:8296] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% url 'comment_post' %}
+2016-06-19 08:12:43,928 [Thread-8:8368] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% url 'blog:comment_post' %}
+2016-06-19 08:18:54,474 [Thread-5:8276] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% url 'blog:comment_post' %}
+2016-06-19 08:20:05,901 [Thread-5:6488] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 223, in get_response
+    response = middleware_method(request, response)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\middleware\clickjacking.py", line 31, in process_response
+    if response.get('X-Frame-Options', None) is not None:
+AttributeError: 'str' object has no attribute 'get'
+2016-06-19 08:24:51,032 [Thread-5:10060] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 223, in get_response
+    response = middleware_method(request, response)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\middleware\clickjacking.py", line 31, in process_response
+    if response.get('X-Frame-Options', None) is not None:
+AttributeError: 'str' object has no attribute 'get'
+2016-06-19 08:24:52,351 [Thread-6:9652] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 223, in get_response
+    response = middleware_method(request, response)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\middleware\clickjacking.py", line 31, in process_response
+    if response.get('X-Frame-Options', None) is not None:
+AttributeError: 'str' object has no attribute 'get'
+2016-06-19 15:04:58,125 [Thread-8:2480] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:04:58,602 [Thread-11:4824] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:04:58,930 [Thread-17:4696] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:04:59,608 [Thread-18:3864] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:00,273 [Thread-19:3500] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:00,457 [Thread-20:4900] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:01,118 [Thread-21:2944] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:01,244 [Thread-22:3620] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:04,022 [Thread-23:1868] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:04,282 [Thread-24:3488] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:04,668 [Thread-25:1860] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:05,154 [Thread-26:1880] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:05,865 [Thread-27:1852] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,078 [Thread-28:5188] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,107 [Thread-29:5944] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,595 [Thread-30:784] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,693 [Thread-31:5968] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,730 [Thread-32:3668] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,749 [Thread-33:5328] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,778 [Thread-34:3676] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,805 [Thread-35:3608] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,835 [Thread-36:5720] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,849 [Thread-37:156] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,867 [Thread-38:2848] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,888 [Thread-39:4656] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,907 [Thread-40:3644] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,921 [Thread-41:4620] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,944 [Thread-42:1544] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,959 [Thread-43:3616] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,970 [Thread-44:3636] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:05:06,980 [Thread-45:4156] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:26:06,167 [Thread-4:2056] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 124, in article
+    comment_list = getpage(request, comment_list)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 232, in getpage
+    article_list = paginator.page(1)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\paginator.py", line 50, in page
+    number = self.validate_number(number)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\paginator.py", line 39, in validate_number
+    if number > self.num_pages:
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\paginator.py", line 86, in _get_num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\paginator.py", line 77, in _get_count
+    self._count = len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+2016-06-19 15:27:16,296 [Thread-3:2532] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 124, in article
+    comment_list = getpage(request, comment_list)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 232, in getpage
+    article_list = paginator.page(1)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\paginator.py", line 50, in page
+    number = self.validate_number(number)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\paginator.py", line 39, in validate_number
+    if number > self.num_pages:
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\paginator.py", line 86, in _get_num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\paginator.py", line 77, in _get_count
+    self._count = len(self.object_list)
+TypeError: object of type 'builtin_function_or_method' has no len()
+2016-06-19 15:31:07,561 [Thread-2:5240] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /article
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 124, in article
+    comment_list = getpage(request, comment_list)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 232, in getpage
+    article_list = paginator.page(1)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\paginator.py", line 50, in page
+    number = self.validate_number(number)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\paginator.py", line 39, in validate_number
+    if number > self.num_pages:
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\paginator.py", line 86, in _get_num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\paginator.py", line 77, in _get_count
+    self._count = len(self.object_list)
+TypeError: object of type 'listreverseiterator' has no len()
+2016-06-19 15:43:03,303 [Thread-5:7712] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-19 15:43:51,190 [Thread-3:8116] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-19 15:44:22,200 [Thread-7:6196] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-19 15:44:49,785 [Thread-9:3916] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-19 15:45:09,289 [Thread-13:6460] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-19 15:46:39,811 [Thread-17:7124] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-19 15:49:21,016 [Thread-2:1464] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-19 15:49:43,321 [Thread-18:6632] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 169, in comment_post
+    return HttpResponse(json.dumps(comment))
+  File "C:\python27\Lib\json\__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\python27\Lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\python27\Lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\python27\Lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <Comment: 25> is not JSON serializable
+2016-06-19 15:51:39,020 [Thread-12:7432] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-19 15:51:58,401 [Thread-16:7392] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-19 15:52:26,864 [Thread-20:8008] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-19 15:52:48,252 [Thread-24:8132] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-19 15:55:22,667 [Thread-18:6324] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 169, in comment_post
+    return HttpResponse(json.dumps({"comment": comment}))
+  File "C:\python27\Lib\json\__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\python27\Lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\python27\Lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\python27\Lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <Comment: 30> is not JSON serializable
+2016-06-19 15:59:07,973 [Thread-4:3084] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 170, in comment_post
+    return HttpResponse(json.dumps(serializers.serialize("json", comment)), content_type="application/json")
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\serializers\__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\serializers\base.py", line 52, in serialize
+    for obj in queryset:
+TypeError: 'Comment' object is not iterable
+2016-06-19 16:05:28,282 [Thread-4:1296] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 170, in comment_post
+    return HttpResponse(json.dumps(serializers.serialize("json", comment)), content_type="application/json")
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\serializers\__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\serializers\base.py", line 52, in serialize
+    for obj in queryset:
+TypeError: 'Comment' object is not iterable
+2016-06-19 16:09:18,255 [Thread-4:6548] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 170, in comment_post
+    return HttpResponse(json.dumps(serializers.serialize("json", {"comment": comment})), content_type="application/json")
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\serializers\__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\serializers\base.py", line 56, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'str' object has no attribute '_meta'
+2016-06-19 16:11:31,811 [Thread-4:884] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 170, in comment_post
+    return HttpResponse(json(comment))
+TypeError: 'module' object is not callable
+2016-06-20 07:21:25,075 [Thread-8:5336] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-20 07:21:36,138 [Thread-12:2584] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 07:38:15,118 [Thread-17:8156] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 171, in comment_post
+    print comment.toJSON()
+  File "E:\djangoWeb\blog_project\blog\models.py", line 102, in toJSON
+    return json.dumps(dict([(attr, getattr(self, attr)) for attr in [f.name for f in self._meta.fields]]))
+  File "C:\python27\Lib\json\__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\python27\Lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\python27\Lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\python27\Lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2016, 6, 19, 23, 38, 15, 74000, tzinfo=<UTC>) is not JSON serializable
+2016-06-20 07:41:02,450 [Thread-8:5608] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 172, in comment_post
+    return HttpResponse(json.dumps(serializers.serialize("json", comment.toJSON())), content_type="application/json")
+  File "E:\djangoWeb\blog_project\blog\models.py", line 102, in toJSON
+    return json.dumps(dict([(attr, getattr(self, attr)) for attr in [f.name for f in self._meta.fields]]))
+  File "C:\python27\Lib\json\__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\python27\Lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\python27\Lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\python27\Lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2016, 6, 19, 23, 41, 2, 440000, tzinfo=<UTC>) is not JSON serializable
+2016-06-20 07:41:33,612 [Thread-3:8184] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 170, in comment_post
+    print type (comment.toJSON())
+  File "E:\djangoWeb\blog_project\blog\models.py", line 102, in toJSON
+    return json.dumps(dict([(attr, getattr(self, attr)) for attr in [f.name for f in self._meta.fields]]))
+  File "C:\python27\Lib\json\__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\python27\Lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\python27\Lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\python27\Lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2016, 6, 19, 23, 41, 33, 592000, tzinfo=<UTC>) is not JSON serializable
+2016-06-20 07:42:49,507 [Thread-3:7092] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 172, in comment_post
+    return HttpResponse(json.dumps(serializers.serialize("json", comment.toJSON())), content_type="application/json")
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\serializers\__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\serializers\base.py", line 56, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'str' object has no attribute '_meta'
+2016-06-20 07:43:53,045 [Thread-3:6980] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 172, in comment_post
+    return HttpResponse(json.dumps(comment.toJSON()))    # return HttpResponse(json.dumps(serializers.serialize("json", comment.toJSON())), content_type="application/json")
+  File "C:\python27\Lib\json\__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\python27\Lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\python27\Lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\python27\Lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2016, 6, 19, 23, 43, 53, 22000, tzinfo=<UTC>) is not JSON serializable
+2016-06-20 07:44:40,331 [Thread-3:7020] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 172, in comment_post
+    return HttpResponse(comment['content'])
+TypeError: 'Comment' object has no attribute '__getitem__'
+2016-06-20 07:45:23,585 [Thread-17:7372] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 172, in comment_post
+    return HttpResponse(comment['content'])
+TypeError: 'Comment' object has no attribute '__getitem__'
+2016-06-20 07:46:09,206 [Thread-4:7804] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 07:47:05,141 [Thread-4:8028] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 07:48:06,497 [Thread-4:2456] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 07:50:31,619 [Thread-14:4896] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 07:53:09,546 [Thread-4:3128] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 07:53:32,348 [Thread-4:5380] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 07:55:08,821 [Thread-2:7516] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 07:55:18,325 [Thread-5:7644] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 07:56:11,398 [Thread-4:7948] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 07:57:39,858 [Thread-4:7516] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 07:57:50,273 [Thread-21:5948] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 07:58:42,852 [Thread-24:6668] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 07:59:38,059 [Thread-21:3288] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 08:00:18,861 [Thread-7:5376] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 08:01:15,137 [Thread-24:7020] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 08:26:07,477 [Thread-5:5624] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 08:26:58,947 [Thread-5:3616] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 08:28:07,181 [Thread-5:5240] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 08:30:02,496 [Thread-8:6424] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-20 08:31:54,390 [Thread-6:6668] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 08:32:41,803 [Thread-5:5372] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 171, in comment_post
+    comment = comment.toJSON()
+  File "E:\djangoWeb\blog_project\blog\models.py", line 102, in toJSON
+    return json.dumps(dict([(attr, getattr(self, attr)) for attr in [f.name for f in self._meta.fields]]))
+  File "C:\python27\Lib\json\__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\python27\Lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\python27\Lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\python27\Lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2016, 6, 20, 0, 32, 41, 798000, tzinfo=<UTC>) is not JSON serializable
+2016-06-20 08:34:05,242 [Thread-6:7996] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 08:36:58,947 [Thread-6:3904] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 08:39:22,901 [Thread-5:7284] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 177, in comment_post
+    return HttpResponse(json.dumps(serializers.serialize("json", comment.toJSON())), content_type="application/json")
+AttributeError: 'dict' object has no attribute 'toJSON'
+2016-06-20 08:40:22,312 [Thread-5:6044] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 178, in comment_post
+    return HttpResponse(json.dumps(serializers.serialize("json", comment.toJSON())), content_type="application/json")
+AttributeError: 'dict' object has no attribute 'toJSON'
+2016-06-20 08:41:37,177 [Thread-5:7776] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 178, in comment_post
+    return HttpResponse(json.dumps(serializers.serialize("json", comment.toJSON())), content_type="application/json")
+AttributeError: 'dict' object has no attribute 'toJSON'
+2016-06-20 08:42:48,898 [Thread-5:7460] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 178, in comment_post
+    return HttpResponse(json.dumps(serializers.serialize("json", comment)), content_type="application/json")
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\serializers\__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\serializers\base.py", line 56, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'str' object has no attribute '_meta'
+2016-06-20 09:15:20,140 [Thread-5:8712] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 178, in comment_post
+    response = HttpResponse(json.dumps(serializers.serialize("json", comment)), content_type="application/json")
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\serializers\__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\serializers\base.py", line 56, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'str' object has no attribute '_meta'
+2016-06-20 09:16:21,374 [Thread-4:9316] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 182, in comment_post
+    print type(response)
+UnboundLocalError: local variable 'response' referenced before assignment
+2016-06-20 09:17:32,834 [Thread-4:9748] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 183, in comment_post
+    print type(response)
+UnboundLocalError: local variable 'response' referenced before assignment
+2016-06-20 09:23:12,451 [Thread-5:9716] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 185, in comment_post
+    print type(response)
+UnboundLocalError: local variable 'response' referenced before assignment
+2016-06-20 09:26:09,845 [Thread-4:9064] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 175, in comment_post
+    comment['content'] = comment.content
+AttributeError: 'dict' object has no attribute 'content'
+2016-06-20 09:27:39,904 [Thread-5:8616] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 175, in comment_post
+    comment['content'] = comment.content
+AttributeError: 'dict' object has no attribute 'content'
+2016-06-20 09:28:41,336 [Thread-4:8952] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 175, in comment_post
+    comment['content'] = comment.content
+AttributeError: 'dict' object has no attribute 'content'
+2016-06-20 09:29:36,025 [Thread-4:8856] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 175, in comment_post
+    comment['content'] = comment.content
+AttributeError: 'dict' object has no attribute 'content'
+2016-06-20 09:30:56,657 [Thread-4:9948] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 175, in comment_post
+    comment['content'] = comment.content
+AttributeError: 'dict' object has no attribute 'content'
+2016-06-20 09:31:29,986 [Thread-4:8748] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 175, in comment_post
+    comment['content'] = comment.content
+AttributeError: 'dict' object has no attribute 'content'
+2016-06-20 09:32:39,776 [Thread-5:9460] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 175, in comment_post
+    comment['content'] = comment.content
+AttributeError: 'dict' object has no attribute 'content'
+2016-06-20 09:33:07,756 [Thread-7:9704] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-20 09:33:15,355 [Thread-10:1724] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 175, in comment_post
+    comment['content'] = comment.content
+AttributeError: 'dict' object has no attribute 'content'
+2016-06-20 09:34:04,730 [Thread-4:10080] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 175, in comment_post
+    comment['content'] = comment.content
+AttributeError: 'dict' object has no attribute 'content'
+2016-06-20 09:36:57,592 [Thread-37:9420] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 175, in comment_post
+    comment['content'] = comment.content
+AttributeError: 'dict' object has no attribute 'content'
+2016-06-20 09:39:54,026 [Thread-4:9104] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 175, in comment_post
+    comment['content'] = comment.content
+AttributeError: 'dict' object has no attribute 'content'
+2016-06-20 09:40:59,003 [Thread-4:9252] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 176, in comment_post
+    comment['username'] = commentorg.usename
+AttributeError: 'Comment' object has no attribute 'usename'
+2016-06-20 09:42:02,691 [Thread-11:8564] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 176, in comment_post
+    comment['username'] = commentorg.usename
+AttributeError: 'Comment' object has no attribute 'usename'
+2016-06-20 09:42:30,128 [Thread-4:1724] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 176, in comment_post
+    comment['username'] = commentorg.usename
+AttributeError: 'Comment' object has no attribute 'usename'
+2016-06-20 09:43:15,043 [Thread-4:10212] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 176, in comment_post
+    comment['username'] = commentorg.usename
+AttributeError: 'Comment' object has no attribute 'usename'
+2016-06-20 12:34:14,915 [Thread-5:11272] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 176, in comment_post
+    comment['username'] = commentorg.usename
+AttributeError: 'Comment' object has no attribute 'usename'
+2016-06-20 12:36:54,756 [Thread-4:10656] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 202, in comment_post
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+2016-06-20 12:37:56,213 [Thread-3:10624] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 202, in comment_post
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+2016-06-20 12:41:19,387 [Thread-2:11980] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 12:42:14,627 [Thread-2:10812] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 12:42:29,045 [Thread-4:11840] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /comment_post
+Traceback (most recent call last):
+  File "E:\WorkSpace\blog_project_env\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\djangoWeb\blog_project\blog\views.py", line 201, in comment_post
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+2016-06-20 12:45:08,098 [Thread-4:1108] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 12:45:59,614 [Thread-4:11200] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 12:48:27,651 [Thread-16:10504] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-20 12:58:31,555 [Thread-3:11120] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 12:58:59,631 [Thread-3:10904] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 13:05:07,028 [Thread-12:8520] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 13:07:52,161 [Thread-23:8244] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 13:11:51,361 [Thread-12:11888] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 13:22:35,242 [Thread-26:12264] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 13:26:03,855 [Thread-12:1108] [django.request:170] [base:get_response] [WARNING]- Not Found: /{% static
+2016-06-20 15:10:29,545 [Thread-4:4500] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-24 06:36:05,700 [Thread-8:4136] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-07-05 11:01:17,716 [Thread-2:5768] [django.request:170] [base:get_response] [WARNING]- Not Found: /reports/
+2016-07-05 11:01:19,592 [Thread-3:6884] [django.request:170] [base:get_response] [WARNING]- Not Found: /reports/
+2016-07-05 11:32:18,694 [Thread-2:6512] [django.request:170] [base:get_response] [WARNING]- Not Found: /reports/

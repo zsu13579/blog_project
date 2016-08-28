@@ -1,0 +1,61 @@
+2016-06-03 22:47:49,118 [Thread-2:8920] [blog.views:12] [views:index] [ERROR]- [Errno 2] No such file or directory: 'xxx.txt'
+2016-06-04 06:34:04,519 [Thread-4:5536] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'xxx.txt'
+2016-06-07 10:35:34,217 [Thread-40:6156] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'xxx.txt'
+2016-06-12 08:52:48,973 [Thread-8:6580] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'xxx.txt'
+2016-06-12 14:16:08,142 [Thread-2:1804] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'xxx.txt'
+2016-06-12 14:16:34,371 [Thread-2:1484] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'xxx.txt'
+2016-06-12 14:22:29,418 [Thread-2:3620] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'xxx.txt'
+2016-06-12 14:23:12,043 [Thread-2:3056] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'xxx.txt'
+2016-06-12 14:31:46,400 [Thread-2:4660] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'xxx.txt'
+2016-06-12 14:31:47,950 [Thread-12:2680] [blog.views:24] [views:index] [ERROR]- [Errno 2] No such file or directory: 'xxx.txt'
+2016-06-13 14:17:27,197 [Thread-2:5276] [blog.views:36] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:18:40,174 [Thread-40:4624] [blog.views:36] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:20:17,895 [Thread-52:4756] [blog.views:36] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:36:51,453 [Thread-2:1900] [blog.views:36] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:41:19,346 [Thread-2:5696] [blog.views:36] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:41:22,388 [Thread-13:5048] [blog.views:36] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:41:32,753 [Thread-14:3720] [blog.views:36] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:41:44,513 [Thread-15:4600] [blog.views:36] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:43:33,910 [Thread-2:4024] [blog.views:37] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:43:37,598 [Thread-13:2044] [blog.views:37] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:43:53,697 [Thread-14:5900] [blog.views:37] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:44:04,918 [Thread-25:3512] [blog.views:37] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:44:13,355 [Thread-26:1060] [blog.views:37] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:44:57,782 [Thread-2:3760] [blog.views:37] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:45:07,596 [Thread-14:5468] [blog.views:37] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:45:11,381 [Thread-15:4816] [blog.views:37] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:45:15,586 [Thread-16:5440] [blog.views:37] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:53:14,430 [Thread-17:5960] [blog.views:37] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:53:19,582 [Thread-30:4880] [blog.views:37] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-13 14:53:22,779 [Thread-31:5524] [blog.views:37] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-14 07:09:39,381 [Thread-2:2324] [blog.views:39] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-14 07:11:03,749 [Thread-2:1060] [blog.views:39] [views:index] [ERROR]- 'Manager' object has no attribute 'distinct_date'
+2016-06-14 07:15:02,921 [Thread-2:2020] [blog.views:39] [views:index] [ERROR]- 'instancemethod' object is not iterable
+2016-06-14 14:23:42,121 [Thread-13:2404] [blog.views:73] [views:tag] [ERROR]- Cannot resolve keyword 'tag' into field. Choices are: article, id, name
+2016-06-14 14:26:32,819 [Thread-61:3280] [blog.views:73] [views:tag] [ERROR]- Cannot resolve keyword 'tag' into field. Choices are: article, id, name
+2016-06-14 14:27:58,683 [Thread-63:5928] [blog.views:73] [views:tag] [ERROR]- Cannot resolve keyword 'tag' into field. Choices are: article, id, name
+2016-06-14 14:29:13,302 [Thread-2:4920] [blog.views:73] [views:tag] [ERROR]- Cannot resolve keyword 'tag' into field. Choices are: article, id, name
+2016-06-14 14:34:53,457 [Thread-4:6372] [blog.views:73] [views:tag] [ERROR]- Tag matching query does not exist.
+2016-06-14 14:35:31,549 [Thread-9:6596] [blog.views:73] [views:tag] [ERROR]- Tag matching query does not exist.
+2016-06-14 14:42:04,279 [Thread-4:6428] [blog.views:73] [views:tag] [ERROR]- Tag matching query does not exist.
+2016-06-14 14:42:42,530 [Thread-2:6692] [blog.views:73] [views:tag] [ERROR]- Tag matching query does not exist.
+2016-06-14 14:42:50,174 [Thread-13:6732] [blog.views:73] [views:tag] [ERROR]- Tag matching query does not exist.
+2016-06-14 14:46:09,818 [Thread-4:8044] [blog.views:73] [views:tag] [ERROR]- Tag matching query does not exist.
+2016-06-14 14:51:53,276 [Thread-6:7188] [blog.views:73] [views:tag] [ERROR]- Tag matching query does not exist.
+2016-06-14 14:52:46,115 [Thread-11:6308] [blog.views:73] [views:tag] [ERROR]- Tag matching query does not exist.
+2016-06-14 14:53:49,842 [Thread-17:4968] [blog.views:73] [views:tag] [ERROR]- Tag matching query does not exist.
+2016-06-14 14:56:45,026 [Thread-2:7240] [blog.views:73] [views:tag] [ERROR]- Tag matching query does not exist.
+2016-06-14 14:57:06,288 [Thread-15:2700] [blog.views:73] [views:tag] [ERROR]- Tag matching query does not exist.
+2016-06-14 15:15:48,618 [Thread-14:6288] [blog.views:84] [views:category] [ERROR]- Category matching query does not exist.
+2016-06-14 15:15:53,405 [Thread-15:7524] [blog.views:84] [views:category] [ERROR]- Category matching query does not exist.
+2016-06-14 15:15:55,325 [Thread-16:728] [blog.views:84] [views:category] [ERROR]- Category matching query does not exist.
+2016-06-14 15:15:56,871 [Thread-17:6772] [blog.views:84] [views:category] [ERROR]- Category matching query does not exist.
+2016-06-14 15:15:59,664 [Thread-18:6780] [blog.views:84] [views:category] [ERROR]- Category matching query does not exist.
+2016-06-16 09:17:13,066 [Thread-2:7228] [blog.views:133] [views:comment_post] [ERROR]- 'username' is an invalid keyword argument for this function
+2016-06-16 09:18:32,957 [Thread-2:6332] [blog.views:133] [views:comment_post] [ERROR]- 'username' is an invalid keyword argument for this function
+2016-06-16 09:23:58,563 [Thread-10:9452] [blog.views:133] [views:comment_post] [ERROR]- 'url' is an invalid keyword argument for this function
+2016-06-18 07:01:19,489 [Thread-13:5928] [blog.views:162] [views:do_login] [ERROR]- http://127.0.0.1:8000/article?articleid=6
+2016-06-18 07:01:25,861 [Thread-14:3316] [blog.views:162] [views:do_login] [ERROR]- http://127.0.0.1:8000/login
+2016-06-18 07:03:44,451 [Thread-2:1884] [blog.views:164] [views:do_login] [ERROR]- http://127.0.0.1:8000/login
+2016-06-18 07:06:24,322 [Thread-8:4404] [blog.views:163] [views:do_login] [ERROR]- 'source_url'
+2016-06-18 07:08:46,930 [Thread-5:1696] [blog.views:164] [views:do_login] [ERROR]- http://127.0.0.1:8000/article?articleid=6
